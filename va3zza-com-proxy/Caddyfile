@@ -5,6 +5,6 @@ va3zza.com {
     header Server-Timing source;desc="net44"
 }
 
-:8888 {
+::1:8888, :8888 {
     respond "Yes, the server is up."
 }
