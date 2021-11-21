@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+
+  va3zza_com_proxy:
+    image: caddy:latest
+    volumes:
+      - va3zza_com_proxy_data:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    ports:
+      - "2001:470:1d:217::3:2:80:80"
+      - "44.31.62.193:80:80"
+      - "2001:470:1d:217::3:2:443:443"
+      - "44.31.62.193:443:443"
+
+volumes:
+  va3zza_com_proxy_data: null
