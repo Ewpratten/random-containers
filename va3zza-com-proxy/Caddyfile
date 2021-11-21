@@ -1,4 +1,4 @@
-va3zza.com {
+dev.va3zza.com {
     reverse_proxy https://www2.va3zza.com {
         header_up Host www2.va3zza.com
     }
